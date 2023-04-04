@@ -1,4 +1,4 @@
-# Trend Hopper - Under progress
+# Trend Hopper - Under Progress
 
 **Trend Hopper** is a 2D DDR rythm game that will challenge your dance moves in your local highschool. Create your own outfits and gain your _swag_!
 
