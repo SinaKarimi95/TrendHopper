@@ -1,0 +1,81 @@
+---
+import ParallaxHeader from '../components/ParallaxHeader.astro';
+import WallSlide from '../components/WallSlide.astro';
+import Footer from '../components/Footer.astro';
+import Main from '../components/Main.astro';
+import { SEO } from 'astro-seo';
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="author" content="Marcus Otterström"/>
+	<meta name="keywords" content="Amelite,Game,2D,Platformer,Draw,Platform,Steam,Indie"/>
+
+	<SEO 
+		title="Test!"
+		description="Challenge your creativity and create your own path in this new take on the classic 2D platformer genre. Climb a mystical tower and find your way back home."
+		canonical="https://amelitegame.com"
+		openGraph={{
+			basic: {
+				title: "Amelite - Out now on Steam!",
+				type: "website",
+				image: "/img/trailer-img.png",
+				url: "https://amelitegame.com"
+			},
+			optional: {
+				video: "https://www.youtube.com/v/ixbsfMQe4XE",
+				description: "Challenge your creativity and create your own path in this new take on the classic 2D platformer genre. Climb a mystical tower and find your way back home."
+			},
+			image: {
+				type: "image/png",
+				alt: "The main character of the game Amelite, standing on a cliffside looking intently at the logotype of the game."
+			}
+		}}
+		twitter={{
+			card: "summary_large_image"
+		}}
+	/>
+
+	<meta property="twitter:description" content="Challenge your creativity and create your own path in this new take on the classic 2D platformer genre. Climb a mystical tower and find your way back home.">
+	<meta itemprop="description" content="Challenge your creativity and create your own path in this new take on the classic 2D platformer genre. Climb a mystical tower and find your way back home.">
+
+	<link rel="icon" type="image/png" sizes="40x40" href="/favicon-40x40.png" />
+
+	<style global>
+		@import "../styles/base.css";
+		@import "../styles/lite-yt-embed.css";
+	</style>
+
+	<script type="module">
+		function enableParallax() {
+			const isMac = navigator.userAgentData?.platform.toLowerCase().includes("mac") || navigator.platform?.toLowerCase().includes("mac");
+			const isChrome = navigator.userAgent.toLowerCase().includes("chrome");
+
+			// Laggy behavior on chrome and mac with parallax scrolling
+			if (isMac && isChrome) return;
+
+			const targets = document.querySelectorAll(".scroll");
+			window.addEventListener("scroll", () => {
+				const offset = window.scrollY / 10;
+				targets.forEach(target => {
+					target.style.transform = `translateY(${offset * target.dataset.speed}px)`;
+				})
+			});
+		}
+		
+		enableParallax();
+	</script>
+
+	<script defer src="/js/lite-yt-embed.js"></script>
+	<script defer data-domain="amelitegame.com" src="/js/script.js"></script>
+	<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+</head>
+<body>
+	<ParallaxHeader />
+	<WallSlide />
+	<Main />
+	<Footer />
+</body>
+</html>

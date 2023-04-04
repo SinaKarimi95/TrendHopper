@@ -1,0 +1,19 @@
+{
+  "name": "trendhopper",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "astro": "^0.22.20",
+    "prettier": "^2.8.7",
+    "prettier-plugin-astro": "^0.8.0"
+  },
+  "dependencies": {
+    "astro-seo": "^0.4.2",
+    "lite-youtube-embed": "^0.2.0"
+  }
+}

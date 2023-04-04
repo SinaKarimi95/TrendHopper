@@ -1,0 +1,165 @@
+---
+import Awards from "../components/Awards.astro";
+import YouTube from "../components/YouTube.astro";
+import Screenshot from "../components/Screenshot.astro";
+import SteamButton from "../components/SteamButton.astro";
+import ItchIoButton from "../components/ItchIoButton.astro";
+import SocialMediaButton from "../components/SocialMediaButton.astro";
+---
+
+<main>
+  <img
+    class="background0"
+    src="/img/parallax/bg0.png"
+    alt=""
+    role="presentation"
+    draggable="false"
+    width="1920"
+    height="1080"
+  />
+  <div id="content">
+    <p class="hero">
+      <strong>Amelite</strong> is a 2D platformer that will challenge your creativity
+      in this new take on a classic genre. Create your own path as the power of drawing
+      platforms is in <em>your</em> hands!
+    </p>
+    <h2>YES</h2>
+    <YouTube id="ixbsfMQe4XE" alt="Play video: Amelite trailer" />
+    <ItchIoButton />
+    <h2>About</h2>
+    <p>
+      Find yourself at the bottom of an abandoned and mystical tower, overgrown
+      by dangerous crystals. With the help of a peculiar creature, climb your
+      way to the top through an ever challenging environment, and find your way
+      home. Leap over gaping holes, block incoming projectiles, or wall-jump in
+      tandem with your own walls. Amelite is a game packed with creative
+      challenges, and every player is free to make their own solutions!
+    </p>
+    <!-- <ul class="socials">
+			<li><SocialMediaButton text="Discord" linkUrl="https://discord.gg/q5zdWWdJvn" iconUrl="/img/discord-logo.svg" /></li>
+			<li><SocialMediaButton text="Instagram" linkUrl="https://www.instagram.com/sealhorse.studios/" iconUrl="/img/instagram-logo.png" /></li>
+			<li><SocialMediaButton text="Facebook" linkUrl="https://www.facebook.com/sealhorsestudios/" iconUrl="/img/facebook-logo.png" /></li>
+		</ul> -->
+    <h2>The team</h2>
+    <p>
+      We are a team of seven passionate Game Design students at York University,
+      continue to write more info here
+      <!-- plus our talented music guy from Stockholm. Amelite started out as a
+      university project and received a lot of praise from teachers, as well as
+      winning 4 awards at the Gotland Game Conference 2021. The extremely
+      positive reception of the game was more than we could have ever hoped for,
+      and it encouraged the entire team to keep developing and publishing it.
+      After one year of balancing our studies with this project we're ecstatic
+      to finally share it with the world! -->
+    </p>
+    <ul class="team">
+      <li>
+        Ellia Godbout - Project Manager, Dance Pad Designer, Game Designer
+      </li>
+      <li>Ashley Thong - Background Artist, UI Designer, Narrative Designer</li>
+      <li>Jaden Tseng - Character artist, Clothing Designer, UI Designer</li>
+      <li>Sina Karimi - SFX Designer, Web Designer, Vector Artist</li>
+      <li>Ada Samiee - Character artist, Clothing Designer</li>
+      <li>Shaiyan Azim - Character Artist</li>
+      <li>Marcus Sett - Programmer</li>
+    </ul>
+    <h2>Screenshots</h2>
+    <div class="screenshots">
+      <Screenshot id={2} />
+      <Screenshot id={3} />
+      <Screenshot id={4} />
+      <Screenshot id={5} />
+    </div>
+    <SteamButton />
+    <Awards />
+  </div>
+</main>
+
+<style>
+  p {
+    margin: auto;
+    margin-bottom: 1.5em;
+    text-align: left;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    margin-top: 2em;
+    margin-bottom: 0.25em;
+    font-weight: 300;
+    font-size: 1.25em;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  main {
+    background-color: #1e181c;
+    position: relative;
+    max-width: 1920px;
+    margin: auto;
+    padding-bottom: 4em;
+  }
+
+  .background0 {
+    margin-top: -100%;
+    width: 100%;
+    padding-bottom: calc(2ch - 4px);
+    user-select: none;
+    pointer-events: none;
+    height: 100%;
+  }
+
+  .hero {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .hero strong {
+    font-size: 1.2em;
+  }
+
+  #content {
+    max-width: 80ch;
+    margin: 0 auto;
+    padding: 2ch;
+    padding-top: 0;
+  }
+
+  ul.team {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    padding: 0%;
+    line-height: 80%;
+    justify-content: center;
+    gap: 1em 2em;
+  }
+
+  ul.team li {
+  }
+
+  .socials {
+    text-align: left;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 500px) {
+    .socials li {
+      width: 100%;
+    }
+  }
+
+  .screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin: 1em auto 3em auto;
+    justify-content: center;
+  }
+</style>
