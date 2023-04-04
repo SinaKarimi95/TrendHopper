@@ -5,4 +5,4 @@
 - Deplotment at [https://trend-hopper.vercel.app/]()
 - Visit the [game page](https://scruffyhere.itch.io/dorothea-city)
 
-![Logo](public\img\gameLogo.png)
+![Logo](./public/img/gameLogo.png)
