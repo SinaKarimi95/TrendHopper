@@ -51,7 +51,23 @@
   </h1>
   <img
     class="crystal"
-    src="/img/parallax/crystal.png"
+    src="/img/parallax/arrow.png"
+    alt=""
+    role="presentation"
+    draggable="false"
+  />
+  <img
+    class="scroll leftCurtain"
+    data-speed="5"
+    src="/img/parallax/leftCurtain.png"
+    alt=""
+    role="presentation"
+    draggable="false"
+  />
+  <img
+    class="scroll rightCurtain"
+    data-speed="5"
+    src="/img/parallax/rightCurtain.png"
     alt=""
     role="presentation"
     draggable="false"
@@ -80,6 +96,18 @@
     pointer-events: none;
   }
 
+  .scroll.leftCurtain {
+    z-index: 1;
+    height: -100vh;
+    width: 100vw;
+  }
+
+  .scroll.rightCurtain {
+    z-index: 1;
+    height: -100vh;
+    width: 100vw;
+  }
+
   .sun {
     mix-blend-mode: overlay;
   }
@@ -93,13 +121,13 @@
 
   @keyframes bob {
     0% {
-      transform: translateY(0);
+      transform: translateY(0px);
     }
     50% {
       transform: translateY(-45px);
     }
     100% {
-      transform: translateY(0);
+      transform: translateY(0px);
     }
   }
 </style>
