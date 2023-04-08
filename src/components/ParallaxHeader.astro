@@ -58,7 +58,7 @@
   />
   <img
     class="scroll leftCurtain"
-    data-speed="5"
+    data-speed="50"
     src="/img/parallax/leftCurtain.png"
     alt=""
     role="presentation"
@@ -66,7 +66,7 @@
   />
   <img
     class="scroll rightCurtain"
-    data-speed="5"
+    data-speed="50"
     src="/img/parallax/rightCurtain.png"
     alt=""
     role="presentation"
@@ -98,14 +98,20 @@
 
   .scroll.leftCurtain {
     z-index: 1;
-    height: -100vh;
-    width: 100vw;
+    left: 0.95vw;
+    max-width: 100%;
+    max-height: 100%;
+    top: -4vh;
   }
 
   .scroll.rightCurtain {
     z-index: 1;
-    height: -100vh;
-    width: 100vw;
+    left: -7.3vw;
+    top: -11vh;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    object-fit: fill;
   }
 
   .sun {

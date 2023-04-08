@@ -36,9 +36,7 @@ import Main from "../components/Main.astro";
         // Laggy behavior on chrome and mac with parallax scrolling
         if (isMac && isChrome) return;
 
-        const targets = document.querySelectorAll(
-          ".scroll, .scroll.leftCurtain, .scroll.rightCurtain"
-        );
+        const targets = document.querySelectorAll(".scroll");
         window.addEventListener("scroll", () => {
           const offset = window.scrollY / 40;
           targets.forEach((target) => {
