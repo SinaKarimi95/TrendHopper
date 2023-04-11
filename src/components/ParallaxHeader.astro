@@ -178,44 +178,45 @@
     max-width: 1920px;
     max-height: 1080px;
     object-fit: unset;
-    transform: translateY(8vh);
+    transform: translateY(15vh);
   }
 
   .scroll.leftCurtain {
-    z-index: 1;
-    left: 3.9vw;
-    max-width: 90%;
-    max-height: 80%;
-    top: -11vh;
+    z-index: 0;
+    left: 12.5vw;
+    max-width: 75%;
+    max-height: 90%;
+    top: -15vh;
     object-fit: unset;
   }
 
   .scroll.rightCurtain {
     z-index: 0;
-    left: 9.4vw;
-    top: -11vh;
-    max-width: 90%;
-    max-height: 80%;
-    height: 100%;
+    right: 12.5vw;
+    top: -15vh;
+    max-width: 75%;
+    max-height: 90%;
     object-fit: unset;
   }
 
 
   @media screen and (max-width: 1920px) and (max-height: 1080px) {
     .scroll.leftCurtain {
-      left: -4.5vw;
-      top: -11vh;
-      transform: translateY(9vh);
+      left: 0vw;
+      top: -20vh;
     }
 
     .scroll.rightCurtain {
-      left: 20.5vw;
-      top: -11vh;
-      transform: translateY(9vh);
+      right: 0vw;
+      top: -20vh;
     }
 
     .topCurtain {
-      transform: translateY(12vh);
+      z-index: 1;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: unset;
+    transform: translateY(12vh);
   }
 
     .scroll.thLogo  {
@@ -228,21 +229,19 @@
   }
   @media screen and (max-width: 1125px) and (max-height: 2436px) {
     .scroll.leftCurtain {
-      left: -12vw;
+      left: 0vw;
       top: -11vh;
-      width: 1200px;
     }
 
     .scroll.rightCurtain {
-      left: 20.5vw;
+      left: 25vw;
       top: -11vh;
-      width: 1200px;
     }
 
     .topCurtain {
       object-fit: unset;
-      width: 5vw;
-      transform: translateY(12vh);
+      width: 12vw;
+      transform: translateY(19vh);
   }
 
     .scroll.thLogo  {
