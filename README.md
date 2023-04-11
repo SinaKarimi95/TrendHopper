@@ -1,8 +1,9 @@
 # Trend Hopper - Under Progress
 
-**Trend Hopper** is a 2D DDR rhythm game that will challenge your dance moves in your local highschool. Create your own outfits and gain your _swag_!
+**Trend Hopper** is a dress-up/rhythm game combo where you use style and dance to befriend the _cliques_ at your school! Inspired by early 2000s flash games for girls, and is made with cheesy nostalgia in mind.
 
 - Deployment at [https://trend-hopper.vercel.app/]()
-- Visit the [game page](https://scruffyhere.itch.io/dorothea-city)
+  - Otter, M. (2021, Jan 17). Amelitegame.com. GitHub. [https://github.com/MarcusOtter/amelitegame.com](https://github.com/MarcusOtter/amelitegame.com)
+- Visit the [game page](https://elliag.itch.io/trend-hoppe)
 
-![Logo](./public/img/gameLogo.png)
+![](public/img/thLogo.png)
