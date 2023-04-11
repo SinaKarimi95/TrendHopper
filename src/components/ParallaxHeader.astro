@@ -41,13 +41,13 @@
     draggable="false"
   />
   <h1>
-    <img
+    <!-- <img
       class="fg"
       src="/img/parallax/fg.png"
       alt="Amelite"
       title="Amelite"
       draggable="false"
-    />
+    /> -->
   </h1>
   <img
     class="crystal"
@@ -64,6 +64,25 @@
     role="presentation"
     draggable="false"
   />
+
+  <img
+    class="scroll trendLogo"
+    data-speed="50"
+    src="/img/trendLogo.png"
+    alt=""
+    role="presentation"
+    draggable="false"
+  />
+
+  <img
+    class="scroll hopperLogo"
+    data-speed="50"
+    src="/img/hopperLogo.png"
+    alt=""
+    role="presentation"
+    draggable="false"
+  />
+
   <img
     class="scroll rightCurtain"
     data-speed="50"
@@ -94,6 +113,33 @@
     max-width: 1920px;
     user-select: none;
     pointer-events: none;
+  }
+
+  .scroll.trendLogo {
+    animation-name: trendHopper;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 0;
+    left: 31vw;
+    max-width: 20%;
+    max-height: 20%;
+    top: 15vh;
+    object-fit: unset;
+  }
+
+  .scroll.hopperLogo {
+    animation-name: trendHopper;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 0;
+    left: 52vw;
+    max-width: 20%;
+    max-height: 20%;
+    top: 16vh;
+    transform: rotate(10deg);
+    object-fit: unset;
   }
 
   .scroll.leftCurtain {
@@ -138,6 +184,7 @@
     animation-timing-function: ease-in-out;
   }
 
+
   @keyframes bob {
     0% {
       transform: translateY(0px);
@@ -149,4 +196,15 @@
       transform: translateY(0px);
     }
   }
+
+  @keyframes trendHopper {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(10px) rotate(10deg);
+    }
+    100% {
+      transform: translateY(0px);
+    }
 </style>
