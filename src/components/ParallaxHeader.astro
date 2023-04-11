@@ -66,7 +66,7 @@
     draggable="false"
   />
 
-  <img
+  <!-- <img
     class="scroll trendLogo"
     data-speed="50"
     src="/img/trendLogo.png"
@@ -82,7 +82,16 @@
     alt=""
     role="presentation"
     draggable="false"
-  />
+  /> -->
+
+  <img
+  class="scroll thLogo"
+  data-speed="50"
+  src="/img/thLogo.png"
+  alt=""
+  role="presentation"
+  draggable="false"
+/>
 
   <img
     class="scroll rightCurtain"
@@ -137,6 +146,18 @@
     object-fit: unset;
   }
 
+  .scroll.thLogo  {
+    animation-name: trendHopper;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    height: 35%;
+    width: 25%;
+    top: 15vh;
+    right: 37vw;
+    object-fit: unset;
+  }
+
   
   .scroll.hopperLogo {
     animation-name: trendHopper;
@@ -183,13 +204,27 @@
 
   @media screen and (max-width: 1920px) and (max-height: 1080px) {
     .scroll.leftCurtain {
-      left: -11.5vw;
+      left: -4.5vw;
       top: -11vh;
+      transform: translateY(9vh);
     }
 
     .scroll.rightCurtain {
-      left: 5vw;
+      left: 20.5vw;
       top: -11vh;
+      transform: translateY(9vh);
+    }
+
+    .topCurtain {
+      transform: translateY(12vh);
+  }
+
+    .scroll.thLogo  {
+      height: 40%;
+    width: 30%;
+    top: 8vh;
+    right: 33vw;
+    object-fit: unset;
     }
   }
 

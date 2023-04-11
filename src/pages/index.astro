@@ -37,7 +37,6 @@ import Main from "../components/Main.astro";
         if (isMac && isChrome) return;
 
         const targets = document.querySelectorAll(".scroll");
-        const myAnimation = document.querySelector(".trendHopper");
         window.addEventListener("scroll", () => {
           const offset = window.scrollY / 40;
           targets.forEach((target) => {
