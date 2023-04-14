@@ -4,6 +4,6 @@
 
 - Deployment at [https://trend-hopper.vercel.app/]()
   - Otter, M. (2021, Jan 17). Amelitegame.com. GitHub. [https://github.com/MarcusOtter/amelitegame.com](https://github.com/MarcusOtter/amelitegame.com)
-- Visit the [game page](https://elliag.itch.io/trend-hoppe)
+- Visit the [game page](https://elliag.itch.io/trend-hopper)
 
 ![](public/img/thLogo.png)
