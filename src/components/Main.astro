@@ -19,6 +19,8 @@ import SocialMediaButton from "../components/SocialMediaButton.astro";
   /> -->
   <div id="content">
     <p class="hero">
+      <br />
+
       <strong>Trend Hopper</strong> is a dress-up/rhythm game combo where you use
       style and dance to befriend the <em>cliques</em> at your school! Inspired by
       early 2000s flash games for girls, and is made with cheesy nostalgia in mind.
@@ -105,6 +107,7 @@ import SocialMediaButton from "../components/SocialMediaButton.astro";
     </ul>
 
     <h2>Music Credits</h2>
+    <br />
     <ul class="music">
       <li>
         <strong>Psychedelicacy</strong> by <a
@@ -210,9 +213,11 @@ import SocialMediaButton from "../components/SocialMediaButton.astro";
 
     ul.music {
       display: flex;
+      padding: 0;
       list-style: none;
-      text-align: center;
-      padding: 1%;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5em 2em;
     }
 
     .socials {
