@@ -48,23 +48,64 @@ import SocialMediaButton from "../components/SocialMediaButton.astro";
       background art and visual effects to character design and programming.
       Meet our talented team members:
     </p>
+
     <ul class="team">
       <li>
-        Ashley Thong - Background Artist, UI Designer, Narrative Designer, VFX
-        Artist
+        <img class="avatar" src="/public/img/team/team1.jpg" alt="Avatar" />
+        <p>
+          <strong><h2>Ashley Thong</h2></strong>Background Artist, UI Designer,
+          Narrative Designer, VFX Artist
+        </p>
       </li>
+
       <li>
-        Ellia Godbout - Project Manager, Dance Pad Designer, Game Designer
+        <img class="avatar" src="/public/img/team/team2.jpeg" alt="Avatar" />
+        <p>
+          <strong><h2>Ellia Godbout</h2></strong>Project Manager, Dance Pad
+          Designer, Game Designer
+        </p>
       </li>
-      <li>Jaden Tseng - Character artist, Clothing Designer, UI Designer</li>
-      <li>Ada Samiee - Character artist, Clothing Designer</li>
-      <li>Sina Karimi - SFX Designer, Web Designer</li>
-      <li>Marcus Sett - Programmer, Animator</li>
-      <li>Shaiyan Azim - Character Artist</li>
+
+      <li>
+        <img class="avatar" src="/public/img/team/team3.jpeg" alt="Avatar" />
+        <p>
+          <strong><h2>Jaden Tseng</h2></strong>Character artist, Clothing
+          Designer, UI Designer
+        </p>
+      </li>
+    </ul>
+
+    <ul class="team">
+      <li>
+        <img class="avatar" src="/public/img/team/team3.jpeg" alt="Avatar" />
+        <p>
+          <strong><h2>Ada Samiee</h2></strong>Character artist, Clothing
+          Designer
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <img class="avatar" src="/public/img/team/team5.jpg" alt="Avatar" />
+          <strong><h2>Sina Karimi</h2></strong>SFX Designer, Web Designer
+        </p>
+      </li>
+
+      <li>
+        <img class="avatar" src="/public/img/team/team6.jpeg" alt="Avatar" />
+        <p><strong><h2>Marcus Sett</h2></strong>Programmer, Animator</p>
+      </li>
+
+      <li>
+        <img class="avatar" src="/public/img/team/team7.jpeg" alt="Avatar" />
+        <p>
+          <strong><h2>Shaiyan Azim</h2></strong>Character Artist
+        </p>
+      </li>
     </ul>
 
     <h2>Music Credits</h2>
-    <ul class="team">
+    <ul class="music">
       <li>
         <strong>Psychedelicacy</strong> by <a
           href="https://lucidsmogdisorder.com/home">Lucid Smog Disorder</a
@@ -93,94 +134,118 @@ import SocialMediaButton from "../components/SocialMediaButton.astro";
     </div>
   </div>
   <ItchIoButton />
-</main>
 
-<style>
-  p {
-    margin: auto;
-    margin-bottom: 1.5em;
-    text-align: center;
-  }
-
-  h2 {
-    text-transform: uppercase;
-    margin-top: 2em;
-    margin-bottom: 0.25em;
-    font-weight: 300;
-    font-size: 1.25em;
-    letter-spacing: 3px;
-    text-align: center;
-  }
-
-  main {
-    background-color: #9f2b68;
-    position: relative;
-    max-width: 1920px;
-    margin: auto;
-    padding-bottom: 4em;
-  }
-
-  .background0 {
-    margin-top: -100%;
-    width: 100%;
-    padding-bottom: calc(2ch - 4px);
-    user-select: none;
-    pointer-events: none;
-    height: 100%;
-    z-index: -1;
-  }
-
-  .hero {
-    margin-top: 1rem;
-    text-align: center;
-  }
-
-  .hero strong {
-    font-size: 1.2em;
-  }
-
-  #content {
-    max-width: 80ch;
-    margin: 0 auto;
-    padding: 2ch;
-    padding-top: 0;
-  }
-
-  ul.team {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    align-items: center;
-    padding: 0%;
-    line-height: 80%;
-    justify-content: center;
-    gap: 1em 2em;
-  }
-
-  ul.team li {
-  }
-
-  .socials {
-    text-align: left;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    flex-wrap: wrap;
-  }
-
-  @media screen and (max-width: 500px) {
-    .socials li {
-      width: 100%;
+  <style>
+    p {
+      margin: auto;
+      margin-bottom: 1.5em;
+      text-align: center;
     }
-  }
 
-  .screenshots {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
-    margin: 1em auto 3em auto;
-    justify-content: center;
-  }
-</style>
+    h2 {
+      text-transform: uppercase;
+      margin-top: 2em;
+      margin-bottom: 0.25em;
+      font-weight: 300;
+      font-size: 1.25em;
+      letter-spacing: 3px;
+      text-align: center;
+      line-height: 1em;
+    }
+
+    main {
+      background-color: #9f2b68;
+      position: relative;
+      max-width: 1920px;
+      margin: auto;
+      padding-bottom: 4em;
+    }
+
+    .background0 {
+      margin-top: -100%;
+      width: 100%;
+      padding-bottom: calc(2ch - 4px);
+      user-select: none;
+      pointer-events: none;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .hero {
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .hero strong {
+      font-size: 1.2em;
+    }
+
+    #content {
+      max-width: 80ch;
+      margin: 0 auto;
+      padding: 2ch;
+      padding-top: 0;
+    }
+
+    ul.team {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      align-items: center;
+      line-height: 80%;
+      justify-content: center;
+    }
+
+    ul.team li {
+      left: 0;
+      right: 0;
+      padding: 5%;
+      line-height: 1em;
+      text-align: center;
+    }
+
+    ul.team img {
+      margin: 0 auto;
+    }
+
+    ul.music {
+      display: flex;
+      list-style: none;
+      text-align: center;
+      padding: 1%;
+    }
+
+    .socials {
+      text-align: center;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 500px) {
+      .socials li {
+        width: 100%;
+      }
+    }
+
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em;
+      margin: 1em auto 3em auto;
+      justify-content: center;
+    }
+
+    .avatar {
+      float: center;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</main>
