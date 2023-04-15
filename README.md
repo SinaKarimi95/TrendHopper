@@ -7,3 +7,5 @@
 - Visit the [game page](https://elliag.itch.io/trend-hopper)
 
 ![](public/img/thLogo.png)
+![](public/img/companyLogo.png)
+
