@@ -4,12 +4,12 @@
       <div style="text-align:center;">
         <p>Game Design Document</p>
         <br />
-        <iframe
-          src="https://drive.google.com/file/d/1D4DFxjTqeQVtxQGPwaQc3MeFxeW-hurv/preview"
-          width="600"
-          height="500"
-          frameborder="0"
-          allow="autoplay"></iframe>
+        <div class="video-container">
+          <iframe
+            src="https://drive.google.com/file/d/1D4DFxjTqeQVtxQGPwaQc3MeFxeW-hurv/preview"
+            frameborder="0"
+            allow="autoplay"></iframe>
+        </div>
         <br />
         <a
           >Website by <a href="https://github.com/SinaKarimi95">Sina Karimi</a>
@@ -45,6 +45,18 @@
           footer {
             background-color: #802254;
             padding: 4em 0;
+          }
+
+          .video-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .video-container iframe {
+            width: 600px;
+            height: 500px;
           }
 
           /* .container {
