@@ -1,4 +1,4 @@
-# Trend Hopper - Under Progress
+# Trend Hopper
 
 **Trend Hopper** is a dress-up/rhythm game combo where you use style and dance to befriend the _cliques_ at your school! Inspired by early 2000s flash games for girls, and is made with cheesy nostalgia in mind.
 
